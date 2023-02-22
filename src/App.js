@@ -80,11 +80,11 @@ function App() {
                     <td>$ {coin.current_price}</td>
                     {coin.price_change_24h < 0 ? (
                       <td className="text-danger">
-                        {coin.price_change_percentage_24h.toFixed(2)}%
+                        {parseFloat(coin.price_change_percentage_24h).toFixed(2)}%
                       </td>
                     ) : (
                       <td className="text-success">
-                        {coin.price_change_percentage_24h.toFixed(2)}%
+                        {parseFloat(coin.price_change_percentage_24h).toFixed(2)}%
                       </td>
                     )}
 
